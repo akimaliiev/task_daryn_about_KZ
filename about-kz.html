@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <title class="lng-about-kz-title">IBO2024 &ndash; About Kazakhstan</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images_daryn\logos\new_logos\logo_8(ico_2).ico"/>
+
+    <link rel="stylesheet" href="bootstrap\bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat:wght@500&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="about-kz-preloader">
+    <div class="spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<script>
+    let aboutKzLoader = document.getElementById("about-kz-preloader");
+
+    window.addEventListener("load", function () {
+        aboutKzLoader.style.display = 'none';
+    })
+</script>
+<!-- Loader -->
+
+<div class="main-content" id="my-scrollbar" data-scrollbar>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img class="px-2" src="images_daryn\logos\new_logos\logo_7.png" width="100" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-1" href="index.html">
+                            IBO - 2024
+                        </a>
+                        <span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li>
+                                <a class="sub-menu__link lng-navbar-sub-menu__link-1-1" href="org-and-host.html">
+                                    Organizers & Hosts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link lng-navbar-menu__link-8" href="visa-kz.html">
+                                   Visa information
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-2" href="#">
+                            Kazakhstan
+                        </a>
+                        <span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li>
+                                <a class="sub-menu__link lng-navbar-sub-menu__link-2-1" href="about-kz.html">
+                                    About Kazakhstan
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link lng-navbar-sub-menu__link-2-2" href="ach-team-kz.html">
+                                    Achievement of the national team of Kazakhstan
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-3" href="#">
+                            Participation
+                        </a>
+                        <!--<span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-3-1" href="#">1</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-3-2" href="#">2</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-3-3" href="#">3</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-4" href="#">
+                            News
+                        </a>
+                        <!--<span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-4-1" href="#">1</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-4-2" href="#">2</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-4-3" href="#">3</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-5" href="program-kz.html">
+                            Program
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__btn-group">
+                    <div class="btn-group" role="group" aria-label="Language selection">
+                        <!-- Kazakhstan Flag Button -->
+                        <button type="button" class="header__btn btn btn-outline-dark" data-btn="kz" style="background: url('https://flagcdn.com/kz.svg') center/cover no-repeat; width: 50px; height: 35px;"></button>
+                        
+                        <!-- Russian Flag Button (commented out) -->
+                        <!--<button type="button" class="header__btn btn btn-outline-dark" data-btn="ru" style="background: url('https://flagcdn.com/ru.svg') center/cover no-repeat; width: 50px; height: 35px;"></button>-->
+                        
+                        <!-- English (Great Britain) Flag Button -->
+                        <button type="button" class="header__btn btn btn-outline-dark" data-btn="en" style="background: url('https://flagcdn.com/gb.svg') center/cover no-repeat; width: 50px; height: 35px;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about_kz about_kz_1 gradient">
+        <div class="text-center pt-4" style="background-color: #F8F9FA; margin-bottom: -1px">
+            <h2 class="lng-about-kz__title">ABOUT KAZAKHSTAN</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="lng-about-kz-1__bi-1">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="lng-about-kz-1__bi-2">
+                            Kazakhstan
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active lng-about-kz-1__bi-3" aria-current="page">
+                        About Kazakhstan
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 155" style="margin-top: -1px;">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-md-6">
+                    <p>
+                        <span class="fw-bolder fs-4 lng-about-kz-1__title-main">Politics</span>
+                        <br><br>
+                        <span class="lng-about-kz-1__text-1">
+                        Being the Central Asia leader, the country makes a significant contribution to strengthening the
+                        stability of the region. The country has made a great progress in the world stage. This is
+                        proved by
+                        the chairmanship of Kazakhstan in the OSCE and holding of the Summit for this international
+                        organization in December 2010 in Astana. A significant initiative introduced by the country was
+                        the
+                        launch and development of the CICMA project, which is the Asian analogue of the OSCE. The
+                        productive
+                        activity of Kazakhstan as being the chairman of the leading organization of the Islamic world
+                        (OIC)
+                        received positive feedback. The country is also a recognized leader in the global anti-nuclear
+                        movement.
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-1__text-2">
+                        Kazakhstan is a member of the Eurasian Economic Union.
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-1__text-3">
+                        Stable growth of all the economy sectors, international recognition and political stability have
+                        become the basis for the prosperity of Kazakhstani society. Kazakhstan is the country looking
+                        ahead,
+                        which at the same time preserves its cultural traditions and successfully implements its huge
+                        potential in today's accelerating world.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 155">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+    </section>
+    <section class="about_kz about_kz_2 gradient">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 135" style="margin-top: -1px;">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <p>
+                        <span class="fw-bolder fs-4 lng-about-kz-2__title-main">Geographical position</span>
+                        <br><br>
+                        <span class="lng-about-kz-2__text-1">
+                            The Republic of Kazakhstan occupies a very advantageous geographical position being in the central part of the Eurasian continent at an equal distance from the Atlantic and Pacific oceans. The country area is 2724.9 thousand km². The indicator is ninth in the world and fourth among the countries of Eurasia. 
+                            <br><br>
+                        <span class="lng-about-kz-2__text-2">
+                            The capital of Kazakhstan is <b>Astana</b>.
+                         </span>
+                         <br><br>
+                        <span class="lng-about-kz-2__text-3">
+                            The key asset of the country is mineral resources. Thus, experts assure that the Kazakh Earth's interior contain almost all the periodic table elements.
+                         </span>
+                         <br><br>
+                        <span class="lng-about-kz-2__text-4">
+                            Kazakhstan is distinguished by its landscape diversity. The natural attractions of Kazakhstan are as follows: northern ridge of the mountains, which is part of the famous Tien Shan; an area of the Altai mountain system and Saryarka also known as the Kazakh Upland                         </span>
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-2__text-5">
+                            The administrative and territorial structure of the country includes 17 regions and 3 cities of republican significance.                      
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-2__text-6">
+                            The population of Kazakhstan is a little over 20 million people.                         
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-2__text-7">
+                            With the territory of 2 million 724.9 thousand square kilometers, the country is ninth in the world in terms of area. In the north and west, the republic has shared borders with Russia: 7.591 km (the longest uninterrupted land border in the world), in the east with China: 1.783 km, in the south with Kyrgyzstan: 1.242 km, Uzbekistan: 2.351 km and Turkmenistan: 426 km. The total length of the land borders is                      13.200 km.                        
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 155">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+    </section>
+
+    
+
+    <section class="about_kz about_kz_4 gradient">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 135" style="margin-top: -1px;">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-md-6">
+                    <p>
+                        <span class="fw-bolder fs-4 lng-about-kz-4__title-main">Education</span>
+                        <br><br>
+                        <span class="lng-about-kz-4__text-1">
+                        The Kazakhstani education system helps to acquire knowledge that later enables people mastering
+                        the
+                        profession. In the Republic of Kazakhstan, education is divided into general and professional.
+                        School (secondary) education is divided into classes: primary (grades 1-4), basic and senior.
+                        Primary vocational education (after the 9th grade) can be obtained in specialized lyceums, and
+                        secondary vocational education at academies or colleges.
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-4__text-2">
+                        The education system in the Republic of Kazakhstan consists of several stages:
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-4__text-3">
+                        1. Preschool education and training;
+                        </span>
+                        <br>
+                        <span class="lng-about-kz-4__text-4">
+                        2. Basic secondary education;
+                        </span>
+                        <br>
+                        <span class="lng-about-kz-4__text-5">
+                        3. Secondary education (general secondary education, technical and vocational education);
+                        </span><br>
+                        <span class="lng-about-kz-4__text-6">
+                        4. Post-secondary education;
+                        </span><br>
+                        <span class="lng-about-kz-4__text-7">
+                        5. Graduate education;
+                        </span>
+                        <br>
+                        <span class="lng-about-kz-4__text-8">
+                        6. Post-graduate education.
+                        </span>
+                        <br>
+                        <span class="lng-about-kz-4__text-9">
+                        The education system is supervised by the relevant ministries: Ministry of Education of the Republic of Kazakhstan and Ministry of Science and Higher Education of the Republic of Kazakhstan.                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 155">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+    </section>
+
+    
+    <!--Sultan was here-->>
+    <section class="about_kz about_kz_6 gradient">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 135" style="margin-top: -1px;">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <p>
+                        <span class="fw-bolder fs-4 lng-about-kz-6__title-main">Fauna of Kazakhstan</span>
+                        <br><br>
+                        <span class="lng-about-kz-6__text-1">
+                            The republic's territory harbors 835 species of vertebrate animals, comprising 178 mammal species,                                  489 bird species (of which 396 nest in Kazakhstan, while others migrate for wintering or during spring and autumn), 49 reptile species, 12 amphibian species, 104 fish species, and 3 cyclostomes.
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-6__text-2">
+                        Animals listed in the red book of Kazakhstan: 
+                        </span>
+                        <br><br>
+                        <span class="lng-about-kz-6__text-3">
+                        1. A total of 132 species and subspecies of vertebrates, encompassing 1 round-mouthed animal, 16 fish, 3 amphibians, 10 reptiles, 57 birds, and 44 mammals.
+                        </span>
+                        <br>
+                        <span class="lng-about-kz-6__text-4">
+                        2. In the category of invertebrates, there are 95 species, including 2 annelids, 6 mollusks, 1 crustacean, 1 arachnid, and 85 insects.
+                        </span>
+                        <br><br>
+
+                        <span class="lng-about-kz-6__text-5">
+                            Hunting targets 35 mammal species and 59 bird species. The Committee prioritizes wildlife conservation, leading to a consistent growth in the numbers of rare ungulates and saigas.
+                            <br><br>
+                            In 2005, the population was as follows: Tugai deer - 350 individuals, gazelle - 12,500, kulan - 1,112, argali - 8,835. By 2022, the numbers increased significantly with Tugai deer reaching 1,052 individuals (a 300% increase), gazelle - 15,089 (20.7% increase), kulan - 4,413 (396.8% increase), and argali - 19,730 (223.3% increase).         
+                        </span>
+                                         
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 155">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+    </section>
+    
+
+    <footer class="gradient">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style="margin-top: -1px;">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="container text-center pt-0">
+            <div class="row">
+                <div class="col-xl-3 col-12 d-flex flex-column">
+                    <div class="p-2 text-start">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images_daryn\logos\new_logos\logo_7.png" width="100" alt="">
+                        </a>
+                    </div>
+                    <div class="p-2 text-start">
+                        <p style="font-size: 14px;" class="lng-footer__title-main">
+                            Kazakhstan is honoured to host the 35th IBO, the world’s most prestigious scientific
+                            Olympiad,
+                            in
+                            2024
+                        </p>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-1">IBO-2024</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                                <a href="org-and-host.html" class="lng-footer__link-1">
+                                    Organisers & Hosts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-2">Kazakhstan</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                                <a href="about-kz.html" class="lng-footer__link-2">
+                                    About Kazakhstan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-3">Participation</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-4">News</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-5">Social Media</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="bootstrap-js\bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/js-langs/langs-change.js?v=30" type="module"></script>
+
+<script src="js/smooth-scroll.js"></script>
+
+<script src="lang-about-kz.js"></script>
+<script>
+    let Scrollbar = window.Scrollbar;
+
+    let scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'), {damping: 0.05, thumbMinSize: 150});
+
+    scrollbar.track.xAxis.element.remove()
+</script>
+
+</body>
+</html>
